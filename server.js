@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 // MongoDB Connection
-mongoose.connect('your_mongodb_connection_string', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb+srv://farkhunda2108:<ooaX7aQ5zrwLM4NY>@cluster0.jzx5efh.mongodb.net', { useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.connection.on('connected', () => {
   console.log('Connected to MongoDB');
 });
